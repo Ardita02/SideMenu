@@ -80,10 +80,12 @@ internal final class SideMenuPresentationController {
 
         presentedViewController.view.untransform {
             presentedViewController.view.frame = frameOfPresentedViewInContainerView
+            presentedViewController.view.backgroundColor = UIColor(red: 3/255.0, green: 86/255.0, blue: 255/255.0, alpha: 1.0)
         }
         presentingViewController.view.untransform {
             presentingViewController.view.frame = frameOfPresentingViewInContainerView
             snapshotView?.frame = presentingViewController.view.bounds
+            snapshotView?.backgroundColor = UIColor(red: 3/255.0, green: 86/255.0, blue: 255/255.0, alpha: 1.0)
         }
 
         guard let statusBarView = statusBarView else { return }
